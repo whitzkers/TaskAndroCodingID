@@ -17,19 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\Users\\bsi80196\\Downloads\\DemoAppV2.apk', true)
+Mobile.callTestCase(findTestCase('Reuse Test Case/User Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('homePage/btn_NavLogin'), 0)
+Mobile.tap(findTestObject('profilePage/btn_SettingProfile'), 0)
 
-Mobile.setText(findTestObject('Object Repository/loginPage/form_Email'), GlobalVariable.validEmail, 0)
+Mobile.tap(findTestObject('profilePage/btn_EditProfile'), 0)
 
-Mobile.setEncryptedText(findTestObject('Object Repository/loginPage/form_Password'), GlobalVariable.validPass, 0)
+Mobile.setText(findTestObject('profilePage/updateProfilePage/form_editFullName'), 'Simanta Fulan', 0)
 
-Mobile.tap(findTestObject('Object Repository/loginPage/btn_Login'), 0)
+Mobile.setText(findTestObject('profilePage/updateProfilePage/form_editPhone'), '12345678101', 0)
 
-Mobile.tap(findTestObject('homePage/nav_Profile'), 0)
+Mobile.tap(findTestObject('profilePage/updateProfilePage/btn_SaveChanges'), 0)
 
-Mobile.verifyElementVisible(findTestObject('profilePage/btn_SettingProfile'), 0)
+Mobile.verifyElementText(findTestObject('profilePage/updateProfilePage/txt_SuccessUpdate'), 'Success')
+
+Mobile.tap(findTestObject('profilePage/updateProfilePage/btn_CancelUpdate'), 0)
 
 Mobile.closeApplication()
 

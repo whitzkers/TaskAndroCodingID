@@ -17,19 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\Users\\bsi80196\\Downloads\\DemoAppV2.apk', true)
+Mobile.callTestCase(findTestCase('Reuse Test Case/User Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('homePage/btn_NavLogin'), 0)
+Mobile.tap(findTestObject('profilePage/btn_SettingProfile'), 0)
 
-Mobile.setText(findTestObject('Object Repository/loginPage/form_Email'), GlobalVariable.validEmail, 0)
+Mobile.tap(findTestObject('profilePage/btn_EditProfile'), 0)
 
-Mobile.setEncryptedText(findTestObject('Object Repository/loginPage/form_Password'), GlobalVariable.validPass, 0)
+Mobile.setText(findTestObject('profilePage/updateProfilePage/form_editName'), 'Ishimura123', 0)
 
-Mobile.tap(findTestObject('Object Repository/loginPage/btn_Login'), 0)
-
-Mobile.tap(findTestObject('homePage/nav_Profile'), 0)
-
-Mobile.verifyElementVisible(findTestObject('profilePage/btn_SettingProfile'), 0)
+Mobile.verifyElementExist(findTestObject('profilePage/updateProfilePage/txt_ErrorName'), 0)
 
 Mobile.closeApplication()
 

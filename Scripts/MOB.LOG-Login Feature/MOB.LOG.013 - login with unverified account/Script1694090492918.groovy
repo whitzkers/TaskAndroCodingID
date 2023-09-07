@@ -21,7 +21,7 @@ Mobile.startApplication('D:\\Users\\bsi80196\\Downloads\\DemoAppV2.apk', false)
 
 Mobile.tap(findTestObject('homePage/btn_NavLogin'), 0)
 
-Mobile.setText(findTestObject('loginPage/form_Email'), 'pokemon123@gmail.com', 0)
+Mobile.setText(findTestObject('loginPage/form_Email'), GlobalVariable.unverifEmail, GlobalVariable.unverifPass)
 
 Mobile.setEncryptedText(findTestObject('loginPage/form_Password'), 'jlYWSi8mxv13dCRq/gql3A==', 0)
 

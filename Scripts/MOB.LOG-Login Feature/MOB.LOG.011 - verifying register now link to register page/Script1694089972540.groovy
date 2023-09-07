@@ -23,9 +23,9 @@ Mobile.tap(findTestObject('Object Repository/homePage/btn_NavLogin'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/loginPage/header_SignIn'), 0)
 
-Mobile.tap(findTestObject('loginPage/lnk_ForgotPass'), 0)
+Mobile.tap(findTestObject('loginPage/lnk_Register'), 0)
 
-Mobile.verifyElementVisible(findTestObject('forgotPassPage/header_RequestLinkForgot'), 0)
+Mobile.verifyElementVisible(findTestObject('registerPage/header_Register'), 0)
 
 Mobile.closeApplication()
 

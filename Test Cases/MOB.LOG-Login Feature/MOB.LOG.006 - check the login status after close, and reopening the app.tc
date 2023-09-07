@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MOB.LOG.006 - check the login status after close, and reopening the app</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df103397-5088-46db-8054-62c85bf29fc0</testCaseGuid>
+</TestCaseEntity>

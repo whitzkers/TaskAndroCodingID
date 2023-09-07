@@ -4,4 +4,34 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'not.litefrost@gmail.com'</initValue>
+      <name>validEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'jlYWSi8mxv13dCRq/gql3A=='</initValue>
+      <name>validPass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'roro@gmail.com'</initValue>
+      <name>invalidEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'jlYWSi8mxv13dCRq/gql3A=='</initValue>
+      <name>invalidPass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'pokemon123@gmail.com'</initValue>
+      <name>unverifEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'jlYWSi8mxv13dCRq/gql3A=='</initValue>
+      <name>unverifPass</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

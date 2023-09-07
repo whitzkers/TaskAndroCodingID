@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MOB.PRF.007 - Update phone number with 8 digits input</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5f827c8e-6e21-4ff6-9a1c-e7c610b71abe</testCaseGuid>
+</TestCaseEntity>

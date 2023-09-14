@@ -17,7 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\Users\\bsi80196\\Downloads\\DemoAppV2.apk', true)
+String path = System.getProperty('user.dir')
+String filePath = path + '\\APK\\DemoAppV2.apk'
+
+Mobile.startApplication(filepath, true)
 
 Mobile.tap(findTestObject('homePage/btn_NavLogin'), 0)
 
